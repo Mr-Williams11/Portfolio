@@ -111,3 +111,41 @@
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 30%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    background-color: black;
+    color: rgb(8, 218, 237);
+    box-shadow: 0 0 10px rgb(1, 1, 4);
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
