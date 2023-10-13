@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    color: white(252, 252, 249);
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: rgb(8, 218, 237);
+    box-shadow: 0 0 10px rgb(1, 1, 4);
+}
+
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(Image.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid  white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+} 
+
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 600px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: aliceblue;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 10px;
+    width: 30%;
+    margin: 40px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    background-color: black;
+    color: rgb(8, 218, 237);
+    box-shadow: 0 0 10px rgb(1, 1, 4);
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
