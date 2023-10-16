@@ -72,6 +72,10 @@
     text-align: center;
     margin: 40px 0px;
 }
+
+span{
+    color: aqua;
+}
 .btn{
     padding: 10px 35px;
     background-color: transparent;
@@ -156,4 +160,9 @@
     box-shadow: 0 0 10px rgb(1, 1, 4);
     cursor: pointer;
     box-shadow: 0 0 10px white;
+}
+
+/* Media query */
+@media screen and (max-width){
+    
 }
