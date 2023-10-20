@@ -11,7 +11,9 @@
     align-items: center;
     position: sticky;
     top: 0;
-    
+    z-index: 1;
+    background: url(nightsky.avif) no-repeat center center/cover;
+    background-attachment: fixed;
 }
 .navbar ul{
     display: flex;
@@ -50,8 +52,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url(Image.jpg) no-repeat center center/cover;
-    background-attachment: fixed;
     height: 900px;
     width: 100%;
     z-index: -1;
@@ -86,11 +86,18 @@ span{
 }
 .btn:hover{
     cursor: pointer;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: aqua;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
 } 
+
+body{
+    background: url(Image.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    max-width: 100%;
+    text-align: center;
+}
 
 /* About Section */
 
@@ -123,6 +130,107 @@ span{
     text-align: left;
     margin: 0px 40px;
 }
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+#home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "heading1   heading    heading2"
+    "pic1      pic2       pic3"
+    "pic4     pic5        pic6";
+    ;
+}
+
+.head {
+    grid-area: heading;
+    text-align: center;
+    border: auto;
+}
+
+.head h1{
+        text-align: center;
+}
+
+#taper{
+    grid-area: pic1;
+    filter: grayscale(75%);
+}
+
+#taper:hover{
+    filter: grayscale(0%);
+}
+
+#taper h2{
+    text-align: center;
+}
+
+#mullet{
+    grid-area: pic2;
+    filter: grayscale(75%);
+}
+
+#mullet:hover{
+    filter: grayscale(0%);
+}
+#mullet h2{
+    text-align: center;
+}
+
+#beard{
+    grid-area: pic3;
+    filter: grayscale(75%);
+}
+
+#beard:hover{
+    filter: grayscale(0%);
+}
+#beard h2{
+    text-align: center;
+}
+
+#Bunny{
+    grid-area: pic4;
+    filter: grayscale(75%);
+}
+
+#Bunny:hover{
+    filter: grayscale(0%);
+}
+#Bunny h2{
+    text-align: center;
+}
+
+#Vienna{
+    grid-area: pic5;
+    filter: grayscale(75%);
+}
+
+#Vienna:hover{
+    filter: grayscale(0%);
+}
+#Vienna h2{
+    text-align: center;
+}
+
+#Calamari{
+    grid-area: pic6;
+    filter: grayscale(75%);
+}
+
+#Calamari:hover{
+    filter: grayscale(0%);
+}
+
+#Calamari h2{
+    text-align: center;
+}
+
 
 /* Contact Section */
 #contact{
@@ -166,3 +274,19 @@ span{
 @media screen and (max-width){
     
 }
+
+@keyframes example {
+    0%   {color: aqua;}
+    25%  {color: white;}
+    50%  {color: aqua;}
+    75%  {color: white;}
+    100% {color: aqua;}
+  }
+
+  .name{
+    animation-iteration-count: infinite;
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+    position: relative;
+  }  
