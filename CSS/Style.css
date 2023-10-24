@@ -12,7 +12,7 @@
     position: sticky;
     top: 0 ;
     z-index: 1;
-    background-image: url(navbar.jpg);
+    background-image: url(/Images/navbar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100px;
