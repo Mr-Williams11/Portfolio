@@ -12,6 +12,9 @@
     position: sticky;
     top: 0;
     z-index: 1;
+    background-image: url(navbar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .navbar ul{
     display: flex;
@@ -68,9 +71,17 @@
 }
 .headings{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    margin: 40px 0px;
+    font-size: 90px;
+    letter-spacing: 12px;
+    color: aliceblue;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 0.3rem linear-gradient(transparent, #0004);
+    line-height: 5rem;
+    text-shadow: 0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 160px aqua;
 }
 
 span{
@@ -88,15 +99,20 @@ span{
     cursor: pointer;
     background-color: black;
     color: aqua;
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua;
     font-weight: bold;
+    text-shadow: 0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 160px aqua;
 } 
 
 body{
     min-height: 100vh;
     max-width: 100%;
     text-align: center;
-    background-image: url(navbar.jpg);
+    background-image: url(Sunset.jpg    );
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -122,7 +138,7 @@ body{
     0 0 50px lightblue,
     0 0 100px lightblue;
     animation: animate 15s linear infinite;
-    animation-duration: calc(90s / var(--i));
+    animation-duration: calc(70s / var(--i));
 }
 .bubbles span:nth-child(even){
     background: white;
@@ -141,6 +157,7 @@ body{
 #about{
     color: aliceblue;
     text-align: left;
+    padding-left: 100px;
 }
 #pic{
     display: flex;
@@ -148,6 +165,7 @@ body{
 #pic img{
     width: 375px;
     height: 100%;
+    padding-right: 100px;
 }
 #intro{
     display: flex;
@@ -161,6 +179,8 @@ body{
     margin-bottom: 20px;
 
 }
+
+/* Work Page */
 
 /* Project Section */
 .heading{
@@ -278,14 +298,13 @@ img{
     box-sizing: border-box;
     background-color: transparent;
     color: aliceblue;
-    padding: 20px;
+    padding-left: 500px;
 }
 .form{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     align-items: center;
-    margin: 20px 0px;
 }
 .input{
     padding: 12px;
@@ -297,18 +316,21 @@ img{
 #send{
     padding: 10px;
     width: 30%;
-    margin: 40px;
-    border: none;
+    border: black;
     outline: none;
 }
 #send:hover{
     background-color: black;
     color: rgb(8, 218, 237);
-    box-shadow: 0 0 10px rgb(1, 1, 4);
+    font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px aqua;
+    text-shadow: 0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 10px aqua,
+    0 0 160px aqua;
 }
-
 /* Media query */
 @media screen and (max-width){
     
